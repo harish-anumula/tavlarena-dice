@@ -1,0 +1,66 @@
+{
+  "name": "tavlarena-dice",
+  "version": "1.0.1",
+  "description": "Verify TavlArena's provably fair dice rolls: commit-reveal derivation (encoding v1) and an offline proof verifier CLI",
+  "license": "MIT",
+  "author": "The TavlArena team <hello@tavlarena.com>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vectors/v1.json": "./vectors/v1.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "tavlarena-dice": "bin/verify.mjs"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "bin/verify.mjs",
+    "vectors/v1.json",
+    "vectors/generate.py",
+    "SPEC.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && vitest run --config vitest.config.ts",
+    "test:browser": "node test/browser-parity.mjs",
+    "vectors": "python3 vectors/generate.py"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "tavla",
+    "backgammon",
+    "dice",
+    "provably-fair",
+    "commit-reveal",
+    "hmac",
+    "sha256",
+    "verifier",
+    "webcrypto"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harish-anumula/tavlarena-dice.git"
+  },
+  "homepage": "https://github.com/harish-anumula/tavlarena-dice#readme",
+  "bugs": {
+    "url": "https://github.com/harish-anumula/tavlarena-dice/issues"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "typescript": "6.0.3",
+    "vitest": "4.1.12"
+  }
+}

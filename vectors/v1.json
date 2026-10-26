@@ -1,0 +1,392 @@
+{
+  "format": "tavlarena-dice-v1",
+  "generatedBy": "Python standard-library hashlib/hmac independent implementation in generate.py",
+  "canonical": [
+    {
+      "input": {
+        "z": "İı",
+        "": "BMP",
+        "𐀀": "supplementary",
+        "a": [null, true, 5, "\n"]
+      },
+      "expected": "{\"a\":[null,true,5,\"\\n\"],\"z\":\"İı\",\"𐀀\":\"supplementary\",\"\":\"BMP\"}"
+    }
+  ],
+  "cases": [
+    {
+      "name": "sequential-byte-seed",
+      "canonicalSettings": "{\"rules\":{\"beaver\":false,\"crawford\":false,\"cube\":false,\"forcedBearoff\":false,\"homeHitAndRun\":true,\"jacoby\":false,\"matchFormat\":\"points\",\"matchLength\":5,\"openingReroll\":true,\"triple\":false,\"variant\":\"tavla\",\"winnerStarts\":true},\"rulesVersion\":\"2026.10.0\"}",
+      "settingsHash": "ba91d0154f4719ca8065d819a50dcc7d7c3b2e0633422a88be8d4f75c3c7d471",
+      "blocks": [
+        {
+          "counter": 0,
+          "block": 0,
+          "hmac": "79acb93aaa5b9f70328a4a542cb481f75f5141076d55e85b0e9e3c9e3ade6712"
+        },
+        {
+          "counter": 1,
+          "block": 0,
+          "hmac": "c7ff1dca1b5c11f0f469a1df99df1638b365414a6c315f93b3c4772dbce8916d"
+        },
+        {
+          "counter": 2,
+          "block": 0,
+          "hmac": "819967c3766bd74ab96ad5c6b1d5d82f8afeb8cce9c054ab4c6971d2d58f1a16"
+        },
+        {
+          "counter": 3,
+          "block": 0,
+          "hmac": "05810b80b5cd76e1a6b8a478b8b64e82bed30b07003b5efd690b03bd8c54a0c8"
+        },
+        {
+          "counter": 4,
+          "block": 0,
+          "hmac": "1dfffd50dd07680d145c649d8790afa72053c47a953eec99732e586e89139d96"
+        },
+        {
+          "counter": 5,
+          "block": 0,
+          "hmac": "7bcbe0d91ac13af0540c81c7a94163a689d6f84d1ef1dcd3415cff724e144b61"
+        },
+        {
+          "counter": 6,
+          "block": 0,
+          "hmac": "441ef532c1a7d36d8dccb8163fdcbbf6e2519814ca3b7d583841ff92a532e93b"
+        },
+        {
+          "counter": 7,
+          "block": 0,
+          "hmac": "0c582af5169f2c839d02c2a29275b4daf6ab24c0c25cedb5ebde5ee9e1811459"
+        },
+        {
+          "counter": 4294967295,
+          "block": 4294967295,
+          "hmac": "4442f7b1ba41ee2e2d603566b4b5e9e5d3068ddee231dbcbaf5be60158962fdb"
+        }
+      ],
+      "proof": {
+        "version": 1,
+        "gameId": "00010203-0405-4607-8809-0a0b0c0d0e0f",
+        "playerIds": [
+          "10111213-1415-4617-9819-1a1b1c1d1e1f",
+          "20212223-2425-4627-a829-2a2b2c2d2e2f"
+        ],
+        "settings": {
+          "rulesVersion": "2026.10.0",
+          "rules": {
+            "variant": "tavla",
+            "openingReroll": true,
+            "winnerStarts": true,
+            "matchLength": 5,
+            "matchFormat": "points",
+            "cube": false,
+            "crawford": false,
+            "triple": false,
+            "homeHitAndRun": true,
+            "forcedBearoff": false,
+            "jacoby": false,
+            "beaver": false
+          }
+        },
+        "commitment": "2c91febc38f87d46a87ef00cd5cb15525db8a7b00c9dae0adc98d45437f78ad2",
+        "contributions": [
+          "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+          "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f"
+        ],
+        "seed": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+        "rolls": [
+          {
+            "index": 0,
+            "dice": [2, 5],
+            "kind": "opening"
+          },
+          {
+            "index": 1,
+            "dice": [2, 6],
+            "kind": "reroll"
+          },
+          {
+            "index": 2,
+            "dice": [4, 4],
+            "kind": "turn"
+          },
+          {
+            "index": 3,
+            "dice": [6, 4],
+            "kind": "discard"
+          },
+          {
+            "index": 4,
+            "dice": [6, 3],
+            "kind": "turn"
+          },
+          {
+            "index": 5,
+            "dice": [4, 6],
+            "kind": "turn"
+          },
+          {
+            "index": 6,
+            "dice": [3, 1],
+            "kind": "turn"
+          },
+          {
+            "index": 7,
+            "dice": [1, 5],
+            "kind": "turn"
+          }
+        ]
+      }
+    },
+    {
+      "name": "first-byte-rejected",
+      "canonicalSettings": "{\"rules\":{\"beaver\":false,\"crawford\":false,\"cube\":false,\"forcedBearoff\":false,\"homeHitAndRun\":true,\"jacoby\":false,\"matchFormat\":\"points\",\"matchLength\":5,\"openingReroll\":true,\"triple\":false,\"variant\":\"tavla\",\"winnerStarts\":true},\"rulesVersion\":\"2026.10.0\"}",
+      "settingsHash": "ba91d0154f4719ca8065d819a50dcc7d7c3b2e0633422a88be8d4f75c3c7d471",
+      "blocks": [
+        {
+          "counter": 0,
+          "block": 0,
+          "hmac": "fc60fe246254a83152cf8bda80685c319ffc8a63610b26b3a2ba0c0a61b9162e"
+        },
+        {
+          "counter": 1,
+          "block": 0,
+          "hmac": "3c86b90d8bd86151bc7168f10485e34770a7dd1e41dfdf0ddd85a3775a9d3d04"
+        },
+        {
+          "counter": 2,
+          "block": 0,
+          "hmac": "230d14b4ce15779bba198dee6b44057db252d1065a0486229b6c2f2d38604f7d"
+        },
+        {
+          "counter": 3,
+          "block": 0,
+          "hmac": "619120430f9e38cccff74cc50cbcd2414e5c3103e8095ee9767207f19461706e"
+        },
+        {
+          "counter": 4,
+          "block": 0,
+          "hmac": "212ed6ab289069e8d6e7ddf03523e83fc278befb7e0c54b02c80e90aed1e91dc"
+        },
+        {
+          "counter": 5,
+          "block": 0,
+          "hmac": "0c3ad8c10f03ffcf69165f27f80bfa3880adcec6da0a166cd2fe04c6fd2a1947"
+        },
+        {
+          "counter": 6,
+          "block": 0,
+          "hmac": "1c13ee28ef72eadb0b7c31f9d84c72099eb6d438855750c0f477b764806ce4e1"
+        },
+        {
+          "counter": 7,
+          "block": 0,
+          "hmac": "9266a5dc9801034c94452115bf1640483b9c5cae2390bafd80c7c2e784a5a2a4"
+        },
+        {
+          "counter": 4294967295,
+          "block": 4294967295,
+          "hmac": "c9c3569f83d84b45df274c4193ae5016834e54b61caf48a8eb037fa1606adc10"
+        }
+      ],
+      "proof": {
+        "version": 1,
+        "gameId": "00010203-0405-4607-8809-0a0b0c0d0e0f",
+        "playerIds": [
+          "10111213-1415-4617-9819-1a1b1c1d1e1f",
+          "20212223-2425-4627-a829-2a2b2c2d2e2f"
+        ],
+        "settings": {
+          "rulesVersion": "2026.10.0",
+          "rules": {
+            "variant": "tavla",
+            "openingReroll": true,
+            "winnerStarts": true,
+            "matchLength": 5,
+            "matchFormat": "points",
+            "cube": false,
+            "crawford": false,
+            "triple": false,
+            "homeHitAndRun": true,
+            "forcedBearoff": false,
+            "jacoby": false,
+            "beaver": false
+          }
+        },
+        "commitment": "077d97485eda5d1d4e25afff4764304c9ed7165148d7b0c43d2c5844762f0d20",
+        "contributions": [
+          "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+          "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f"
+        ],
+        "seed": "0000000000000000000000000000000000000000000000000000000000000032",
+        "rolls": [
+          {
+            "index": 0,
+            "dice": [1, 1],
+            "kind": "opening"
+          },
+          {
+            "index": 1,
+            "dice": [1, 3],
+            "kind": "reroll"
+          },
+          {
+            "index": 2,
+            "dice": [6, 2],
+            "kind": "turn"
+          },
+          {
+            "index": 3,
+            "dice": [2, 2],
+            "kind": "discard"
+          },
+          {
+            "index": 4,
+            "dice": [4, 5],
+            "kind": "turn"
+          },
+          {
+            "index": 5,
+            "dice": [1, 5],
+            "kind": "turn"
+          },
+          {
+            "index": 6,
+            "dice": [5, 2],
+            "kind": "turn"
+          },
+          {
+            "index": 7,
+            "dice": [3, 1],
+            "kind": "turn"
+          }
+        ]
+      }
+    },
+    {
+      "name": "tied-opening",
+      "canonicalSettings": "{\"rules\":{\"beaver\":false,\"crawford\":false,\"cube\":false,\"forcedBearoff\":false,\"homeHitAndRun\":true,\"jacoby\":false,\"matchFormat\":\"points\",\"matchLength\":5,\"openingReroll\":true,\"triple\":false,\"variant\":\"tavla\",\"winnerStarts\":true},\"rulesVersion\":\"2026.10.0\"}",
+      "settingsHash": "ba91d0154f4719ca8065d819a50dcc7d7c3b2e0633422a88be8d4f75c3c7d471",
+      "blocks": [
+        {
+          "counter": 0,
+          "block": 0,
+          "hmac": "de663be42234fb196609f3a8f9b9fdc9db6e6dcffbb2d06e30cd2a804443053a"
+        },
+        {
+          "counter": 1,
+          "block": 0,
+          "hmac": "a6611709d7aea5861160e9414ac4812387d475e2c88a9b38bb2dc8798868715d"
+        },
+        {
+          "counter": 2,
+          "block": 0,
+          "hmac": "80bfff081ae1146bb30151291ea02bf8462192efcf61940c861b2122fa9477c8"
+        },
+        {
+          "counter": 3,
+          "block": 0,
+          "hmac": "c335140cd06eed8c12631ad2f9a3eb0f9fb5d63447185ac5d4bed9ac09adccfe"
+        },
+        {
+          "counter": 4,
+          "block": 0,
+          "hmac": "912a71f1ad9f9fe86254bc13b891378b3a1ed2d0c6b35d9b4b04324fac53de44"
+        },
+        {
+          "counter": 5,
+          "block": 0,
+          "hmac": "691fc95b79fd587dc4ef5b85ad1ce24b56b339f6dd5c2a7c0044df058d751e5f"
+        },
+        {
+          "counter": 6,
+          "block": 0,
+          "hmac": "ab37ad86f6254e9348583ab697aae65c9b384f0aa8e303d8c779bab9a99b148c"
+        },
+        {
+          "counter": 7,
+          "block": 0,
+          "hmac": "8f22e98737c35e48f0f35aac83025ec0f1e93195b35a8312ec3e0e59e952c284"
+        },
+        {
+          "counter": 4294967295,
+          "block": 4294967295,
+          "hmac": "c9d5bd130f52892f7b133b4b46d9ff2e3e0d9f1e71c8fd4824800e6fd4623bb5"
+        }
+      ],
+      "proof": {
+        "version": 1,
+        "gameId": "00010203-0405-4607-8809-0a0b0c0d0e0f",
+        "playerIds": [
+          "10111213-1415-4617-9819-1a1b1c1d1e1f",
+          "20212223-2425-4627-a829-2a2b2c2d2e2f"
+        ],
+        "settings": {
+          "rulesVersion": "2026.10.0",
+          "rules": {
+            "variant": "tavla",
+            "openingReroll": true,
+            "winnerStarts": true,
+            "matchLength": 5,
+            "matchFormat": "points",
+            "cube": false,
+            "crawford": false,
+            "triple": false,
+            "homeHitAndRun": true,
+            "forcedBearoff": false,
+            "jacoby": false,
+            "beaver": false
+          }
+        },
+        "commitment": "e4b734a64e4b6c97609b9d6ec527a1da43199967d682a38fae337c0e57775751",
+        "contributions": [
+          "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+          "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f"
+        ],
+        "seed": "0000000000000000000000000000000000000000000000000000000000000003",
+        "rolls": [
+          {
+            "index": 0,
+            "dice": [1, 1],
+            "kind": "opening"
+          },
+          {
+            "index": 1,
+            "dice": [5, 2],
+            "kind": "reroll"
+          },
+          {
+            "index": 2,
+            "dice": [3, 6],
+            "kind": "turn"
+          },
+          {
+            "index": 3,
+            "dice": [4, 6],
+            "kind": "discard"
+          },
+          {
+            "index": 4,
+            "dice": [2, 1],
+            "kind": "turn"
+          },
+          {
+            "index": 5,
+            "dice": [4, 2],
+            "kind": "turn"
+          },
+          {
+            "index": 6,
+            "dice": [4, 2],
+            "kind": "turn"
+          },
+          {
+            "index": 7,
+            "dice": [6, 5],
+            "kind": "turn"
+          }
+        ]
+      }
+    }
+  ]
+}
