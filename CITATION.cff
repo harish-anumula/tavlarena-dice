@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "tavlarena-dice: a verifier for TavlArena's provably fair dice"
+abstract: "A dependency-free TypeScript library and offline CLI that recomputes every roll of a TavlArena game from the server's revealed seed and both players' contributions (commit-reveal, encoding v1), with independent test vectors."
+authors:
+  - name: "The TavlArena team"
+    email: hello@tavlarena.com
+    website: "https://tavlarena.com"
+repository-code: "https://github.com/harish-anumula/tavlarena-dice"
+url: "https://tavlarena.com/fair-dice/"
+license: MIT
+version: "1.0.1"
+date-released: 2026-10-26
+keywords:
+  - "provably fair"
+  - "commit-reveal"
+  - "dice"
+  - "backgammon"
+  - "verification"

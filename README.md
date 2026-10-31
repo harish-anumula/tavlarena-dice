@@ -90,6 +90,23 @@ npm test                 # builds, then runs the vector, error-path and CLI test
 npm run test:browser     # same vectors in real Chromium (page and worker); needs `npx playwright install chromium`
 ```
 
+## Citing
+
+If you use tavlarena-dice in research, a write-up or a product, please cite it. GitHub's **Cite this repository** button (from [CITATION.cff](CITATION.cff)) gives APA and BibTeX:
+
+```bibtex
+@software{tavlarena_tavlarenadice_2026,
+  author  = {{The TavlArena team}},
+  title   = {tavlarena-dice: a verifier for TavlArena's provably fair dice},
+  year    = {2026},
+  version = {1.0.1},
+  url     = {https://github.com/harish-anumula/tavlarena-dice},
+  license = {MIT}
+}
+```
+
+If you copy or adapt its code, keep the MIT copyright notice that comes with it ([LICENSE](LICENSE)).
+
 ## License
 
 [MIT](LICENSE) © 2026 The TavlArena team

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// tavlarena-dice by the TavlArena team · MIT · https://github.com/harish-anumula/tavlarena-dice
 // MIT. A local verifier only: no network, credentials or application dependencies.
 import { open } from "node:fs/promises";
 import { parseArgs } from "node:util";

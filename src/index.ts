@@ -1,3 +1,4 @@
+// tavlarena-dice by the TavlArena team · MIT · https://github.com/harish-anumula/tavlarena-dice
 /** MIT licensed; independent of the proprietary TavlArena application. */
 export const COMMIT_CONTEXT = "tavlarena-dice-commit-v1";
 export const ROLL_CONTEXT = "tavlarena-dice-roll-v1";
